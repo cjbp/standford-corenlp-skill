@@ -19,12 +19,11 @@ A Blue Prism skill that implements the Web API interface to the [Stanford CoreNL
 
 ## Getting Started:
 
-### Install the JDK:
-- I installed [OpenJDK 8 (LTS)](https://adoptopenjdk.net)
-
-#### Download the CoreNLP v3.9.2 package:
-[Download](https://stanfordnlp.github.io/CoreNLP/index.html#download) and unzip it to the directory of you choice. 
-- I installed it in ``` C:\BluePrism\Projects\Stanford\CoreNLP ``` but it should not matter since the VBO accesses the server API via the URL http://localhost:9000
+- Install the JDK:
+  - I installed [OpenJDK 8 (LTS)](https://adoptopenjdk.net)
+  
+- [Download the CoreNLP v3.9.2 package](https://stanfordnlp.github.io/CoreNLP/index.html#download) and unzip it to the directory of you choice. 
+  - I installed it in ``` C:\BluePrism\Projects\Stanford\CoreNLP ``` but it should not matter since the VBO accesses the server API via the URL http://localhost:9000
 
 #### Install the Blue Prism skill from the Digital Exchange:
 - Install the **Stanford CoreNLP Skill v1.0.bpskill** to your Blue Prism database.
@@ -42,7 +41,7 @@ cd C:\BluePrism\Projects\Stanford\CoreNLP  // or the folder location where you u
 java -cp "*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators "tokenize" -preload "tokenize, ssplit, pos, parse, lemma, depparse" 
 ```
 __Important Note:__
-> If you run into issue starting the server you may need to check the JDK install, permissions or memory allocation.  Please refer to the Stamford CoreNLP
+`If you run into issue starting the server you may need to check the JDK install, permissions or memory allocation.  Please refer to the:' (Stamford CoreNLP FAQ)[https://stanfordnlp.github.io/CoreNLP/faq.html]
 
 Once the server has started, using the browser of your choice and enter the following URLs to test if the server is alive and ready to take requests:
 - http://localhost:9000/live - server started succesfully
