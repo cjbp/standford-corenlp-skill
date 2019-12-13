@@ -8,12 +8,12 @@
 <!-- Asset Pitch -->
 A Blue Prism skill that implements the Web API interface to the [Stanford CoreNLP server](https://stanfordnlp.github.io/CoreNLP/ "Stanford CoreNLP wiki page").
 
-### Whats Included:
+## Whats Included:
 + Stanford CoreNLP Skill v1.0.bpskill - Blue Prism skill
 + Standford CoreNLP - Basic Actions v1.0.bprelease - A VBO to expose the Stanford CoreNLP Skill via Blue Prism actions. 
 + Standford CoreNLP - Example Process v1.0.bprelease - A sample process that uses the Stanford CoreNLP Skill and VBO for simple NLP tasks.
 
-### Pre-Requisites
+## Pre-Requisites
 - Open JDK 8 or equivalent (64-bit preferred due to the VM memory requirements)
 - Stanford CoreNLP 3.9.2
 
@@ -35,13 +35,12 @@ A Blue Prism skill that implements the Web API interface to the [Stanford CoreNL
 ## Verifying the CoreNLP Server:
 > NOTE: Once you have the JDK installed, the CoreNLP is unzipped and ready and the bprealease installed and ready type the following in a command window...
 
-- In a command line window:
+- To start the server, open a command line window or use a batch file to execute the following commands:
 ```bash
-cd C:\BluePrism\Projects\Stanford\CoreNLP  // or the folder location where you unzipped the CoreNLP package
+cd <Enter Your CoreNLP install Location here >
 java -cp "*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators "tokenize" -preload "tokenize, ssplit, pos, parse, lemma, depparse" 
 ```
-__Important Note:__
-`If you run into issue starting the server you may need to check the JDK install, permissions or memory allocation.  Please refer to the:' (Stamford CoreNLP FAQ)[https://stanfordnlp.github.io/CoreNLP/faq.html]
+:heavy_exclamation_mark: Important Note: If you run into issue starting the server you may need to check the JDK install, permissions or memory allocation.  Please refer to the: (Stamford CoreNLP FAQ)[https://stanfordnlp.github.io/CoreNLP/faq.html]
 
 Once the server has started, using the browser of your choice and enter the following URLs to test if the server is alive and ready to take requests:
 - http://localhost:9000/live - server started succesfully
