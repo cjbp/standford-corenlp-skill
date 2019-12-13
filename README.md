@@ -25,14 +25,14 @@ A Blue Prism skill that implements the Web API interface to the [Stanford CoreNL
 - [Download the CoreNLP v3.9.2 package](https://stanfordnlp.github.io/CoreNLP/index.html#download) and unzip it to the directory of you choice. 
   - I installed it in ``` C:\BluePrism\Projects\Stanford\CoreNLP ``` but it should not matter since the VBO accesses the server API via the URL http://localhost:9000
 
-#### Install the Blue Prism skill from the Digital Exchange:
-- Install the **Stanford CoreNLP Skill v1.0.bpskill** to your Blue Prism database.
+- Install the Blue Prism skill from the Digital Exchange:
+  - Install the **Stanford CoreNLP Skill v1.0.bpskill** to your Blue Prism database.
 
-#### (OPTIONAL) Install the additional Blue Prism assets from the Digital Exchange:
-- Install the **Standford CoreNLP - Basic Actions v1.0.bprelease** to your Blue Prism database.
-- Install the **Standford CoreNLP - Example Process v1.0.bprelease** to your Blue Prism database.
+- Optionally install the additional Blue Prism assets from the Digital Exchange:
+  - Install the **Standford CoreNLP - Basic Actions v1.0.bprelease** to your Blue Prism database.
+  - Install the **Standford CoreNLP - Example Process v1.0.bprelease** to your Blue Prism database.
 
-#### Verifying your pre-requisite installs:
+## Verifying the CoreNLP Server:
 > NOTE: Once you have the JDK installed, the CoreNLP is unzipped and ready and the bprealease installed and ready type the following in a command window...
 
 - In a command line window:
