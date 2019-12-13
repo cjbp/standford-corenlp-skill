@@ -1,2 +1,2 @@
 # repo-template
-A Blue Prism skill that implements an VBO with Web API interface to the Stanford CoreNLP server.
+A Blue Prism skill that implements the Web API interface to the [Stanford CoreNLP server](https://stanfordnlp.github.io/CoreNLP/ "Stanford CoreNLP wiki page").
