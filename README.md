@@ -40,8 +40,15 @@ A Blue Prism skill that implements the Web API interface to the [Stanford CoreNL
 cd <Enter Your CoreNLP install Location here >
 java -cp "*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators "tokenize" -preload "tokenize, ssplit, pos, parse, lemma, depparse" 
 ```
-:heavy_exclamation_mark: Important Note: If you run into issue starting the server you may need to check the JDK install, permissions or memory allocation.  Please refer to the: (Stamford CoreNLP FAQ)[https://stanfordnlp.github.io/CoreNLP/faq.html]
+:heavy_exclamation_mark: Important Note: Once the CoreNLP server is setup correctly it runs very well. If for some reason you run into issues starting the server or with slow performance please refer to the following sections for help:
+- (CoreNLP Server)[https://stanfordnlp.github.io/CoreNLP/corenlp-server.html]
+- (Understanding memory and time usage)https://stanfordnlp.github.io/CoreNLP/memory-time.html
+- (Stamford CoreNLP FAQ)[https://stanfordnlp.github.io/CoreNLP/faq.html]
 
 Once the server has started, using the browser of your choice and enter the following URLs to test if the server is alive and ready to take requests:
 - http://localhost:9000/live - server started succesfully
 - http://localhost:9000/ready - the default configurations are loaded and ready to take requests
+
+If this all goes well you should be able to run the provided __Standford CoreNLP - Example Process v1.0.bprelease__ with the __Standford CoreNLP - Basic Actions v1.0.bprelease__.  You can also bypass these and directly access the Skill API.
+
+Have Fun!!!
