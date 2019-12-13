@@ -19,31 +19,23 @@ Whats Included:
 	- Stanford CoreNLP 3.9.2
 
 #### Install the JDK
+	- I installed [OpenJDK 8 (LTS)](https://adoptopenjdk.net)
 
-1. install your JDK - I installed [OpenJDK 8 (LTS)](https://adoptopenjdk.net)
+#### Download the CoreNLP v3.9.2 package
+[Download](https://stanfordnlp.github.io/CoreNLP/index.html#download) and unzip it to the directory of you choice. 
+	- I installed it in ``` C:\BluePrism\Projects\Stanford\CoreNLP ``` but it should not matter since the VBO accesses the server API via the URL http://localhost:9000
 
-2. Download the CoreNLP v3.9.2 from https://stanfordnlp.github.io/CoreNLP/index.html#download and unzip it to the directory of you liking.
-I installed it in C:\BluePrism\Projects\Stanford\CoreNLP but it should not matter since the VBO accesses the server API via http://localhost:9000
+### Install the Blue Prism skill from the Digital Exchange
+- Install the Stanford CoreNLP Skill v1.0.bpskill to your Blue Prism database.
 
-Install the Stanford CoreNLP - Basic Actions v0.1 Draft.bprelease to your Blue Prism database.
+### (OPTIONAL) Install the additional Blue Prism assets from the Digital Exchange
+- Standford CoreNLP - Basic Actions v1.0.bprelease to your Blue Prism database.
+- Install the Stanford CoreNLP Skill v1.0.bpskill to your Blue Prism database.
 
- 	It should contain the following:
+> Once you have the JDK installed, the CoreNLP is unzipped and ready and the bprealease installed and ready type the following in a command window...
 
-		Processes
-		   Skills
-			Stanford Core NLP
-                   		Stanford Core NLP - Test Process ( A Short example of how to use the VBO )
-
-		Business Objects
-		   Skills
-			Stanford Core NLP
-                               	   Stanford Core NLP - Basic Actions ( The VBO with access to the CoreNLP tools and Annotators )
-		Web APIs
-		   Stanford Core NLP
-
-Once you have the JDK installed, the CoreNLP is unzipped and ready and the bprealease installed and ready type the following in a command window...
-
-	cd C:\BluePrism\Projects\Stanford\CoreNLP   **note: or the location of your CoreNLP folder.
+	``` cd C:\BluePrism\Projects\Stanford\CoreNLP```
+	**note: or the location of your CoreNLP folder.
 
 	java -cp "*" -mx4g edu.stanford.nlp.pipeline.StanfordCoreNLPServer **note: the -mx4g can be reduced or increased based on the needs of the annotator(s)
 
