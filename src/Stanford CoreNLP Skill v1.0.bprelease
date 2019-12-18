@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bpr:release xmlns:bpr="http://www.blueprism.co.uk/product/release">
+    <bpr:name>Stanford CoreNLP Skill v1.0</bpr:name>
+    <bpr:release-notes>Initial release to Digital Exchange</bpr:release-notes>
+    <bpr:created>2019-12-13 16:04:30Z</bpr:created>
+    <bpr:package-id>18</bpr:package-id>
+    <bpr:package-name>Stanford CoreNLP Skill</bpr:package-name>
+    <bpr:user-created-by>admin</bpr:user-created-by>
+    <bpr:contents count="1">
+        <webapiservice id="4974ba67-aaa8-47c2-96f2-bb66ac3be7aa" name="Stanford Core NLP" enabled="true" xmlns="http://www.blueprism.co.uk/product/webapiservice">
+            <configuration baseurl="http://localhost:9000" xmlns="">
+                <actions>
+                    <action id="15" name="Annotate" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="?properties=[properties]">
+                            <headers />
+                            <bodycontent type="1">
+                                <template><![CDATA[[text]]]></template>
+                            </bodycontent>
+                        </request>
+                        <parameters>
+                            <actionparameter name="properties" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The properties JSON string to pass to the CoreNLP server]]></description>
+                            </actionparameter>
+                            <actionparameter name="text" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The text to apply the annotators list.]]></description>
+                            </actionparameter>
+                        </parameters>
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                    <action id="16" name="Live" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="/live">
+                            <headers />
+                            <bodycontent type="0"></bodycontent>
+                        </request>
+                        <parameters />
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                    <action id="17" name="Ready" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="/ready">
+                            <headers />
+                            <bodycontent type="0"></bodycontent>
+                        </request>
+                        <parameters />
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                    <action id="18" name="TokenRegex" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="/tokenregex?pattern=[pattern]&amp;properties=[properties]">
+                            <headers />
+                            <bodycontent type="1">
+                                <template><![CDATA[[text]]]></template>
+                            </bodycontent>
+                        </request>
+                        <parameters>
+                            <actionparameter name="pattern" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The TokensRegex pattern to annotate.]]></description>
+                            </actionparameter>
+                            <actionparameter name="properties" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The properties JSON string to pass to the CoreNLP server]]></description>
+                            </actionparameter>
+                            <actionparameter name="text" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[]]></description>
+                            </actionparameter>
+                        </parameters>
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                    <action id="19" name="Semgrex" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="/semgrex?pattern=[pattern]&amp;properties=[properties]">
+                            <headers />
+                            <bodycontent type="1">
+                                <template><![CDATA[[text]]]></template>
+                            </bodycontent>
+                        </request>
+                        <parameters>
+                            <actionparameter name="pattern" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The Semgrex pattern to annotate.]]></description>
+                            </actionparameter>
+                            <actionparameter name="properties" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[If true, entire sentences must match the pattern, rather than the API finding matching sections.]]></description>
+                            </actionparameter>
+                            <actionparameter name="text" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[]]></description>
+                            </actionparameter>
+                        </parameters>
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                    <action id="20" name="Tregex" enabled="true" enableRequestOutputParameter="false" disableSendingOfRequest="false">
+                        <description><![CDATA[]]></description>
+                        <request httpmethod="POST" urlpath="/tregex?pattern=[pattern]&amp;properties=[properties]">
+                            <headers />
+                            <bodycontent type="1">
+                                <template><![CDATA[[text]]]></template>
+                            </bodycontent>
+                        </request>
+                        <parameters>
+                            <actionparameter name="pattern" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The Tregex pattern to annotate.]]></description>
+                            </actionparameter>
+                            <actionparameter name="properties" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[The properties JSON string to pass to the CoreNLP server]]></description>
+                            </actionparameter>
+                            <actionparameter name="text" expose="true" datatype="64">
+                                <initialvalue><![CDATA[]]></initialvalue>
+                                <description><![CDATA[]]></description>
+                            </actionparameter>
+                        </parameters>
+                        <outputparameters>
+                            <parameters />
+                            <code><![CDATA[]]></code>
+                        </outputparameters>
+                    </action>
+                </actions>
+                <commonparameters />
+                <commonheaders />
+                <commonauthentications>
+                    <authentication type="0" />
+                </commonauthentications>
+                <commoncode>
+                    <codeproperties code="" language="visualbasic">
+                        <namespaces>
+                            <namespace>System</namespace>
+                            <namespace>System.Drawing</namespace>
+                            <namespace>System.Data</namespace>
+                        </namespaces>
+                        <references>
+                            <reference>System.dll</reference>
+                            <reference>System.Data.dll</reference>
+                            <reference>System.Xml.dll</reference>
+                            <reference>System.Drawing.dll</reference>
+                        </references>
+                    </codeproperties>
+                </commoncode>
+                <configurationsettings>
+                    <configurationsettings requesttimeout="120" authserverrequesttimeout="10" />
+                </configurationsettings>
+            </configuration>
+        </webapiservice>
+    </bpr:contents>
+</bpr:release>

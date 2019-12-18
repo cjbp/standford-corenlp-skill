@@ -1,0 +1,12 @@
+{
+  "ProductId": "",
+  "SelectedWebApi": "4974ba67-aaa8-47c2-96f2-bb66ac3be7aa",
+  "CategoryId": 4,
+  "VersionNumber": "1.0",
+  "Name": "Stanford CoreNLP Capability Skill",
+  "Description": "Integration with Blue Prism and the Stanford CoreNLP server API",
+  "IconFilePath": "",
+  "BluePrismVersionCreated": "6.6.0.15260",
+  "BluePrismVersionTested": "6.6.0.15260",
+  "Provider": "Blue Prism"
+}
