@@ -10,7 +10,7 @@ A Blue Prism skill that implements the Web API interface to the [Stanford CoreNL
 
 
 ### Whats Included:
-+ Stanford CoreNLP Skill v1.0.bpskill - Blue Prism skill
++ Stanford CoreNLP Capability Skill.bpskill - Blue Prism skill
 + Standford CoreNLP - Basic Actions v1.0.bprelease - A VBO to expose the Stanford CoreNLP Skill via Blue Prism actions. 
 + Standford CoreNLP - Example Process v1.0.bprelease - A sample process that uses the Stanford CoreNLP Skill and VBO for simple NLP tasks.
 

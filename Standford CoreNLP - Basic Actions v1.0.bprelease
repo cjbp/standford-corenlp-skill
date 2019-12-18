@@ -2,8 +2,8 @@
 <bpr:release xmlns:bpr="http://www.blueprism.co.uk/product/release">
     <bpr:name>Standford CoreNLP - Basic Actions v1.0</bpr:name>
     <bpr:release-notes>Initial Release</bpr:release-notes>
-    <bpr:created>2019-12-18 01:30:20Z</bpr:created>
-    <bpr:package-id>8</bpr:package-id>
+    <bpr:created>2019-12-18 01:44:45Z</bpr:created>
+    <bpr:package-id>13</bpr:package-id>
     <bpr:package-name>Standford CoreNLP - Basic Actions</bpr:package-name>
     <bpr:user-created-by>admin</bpr:user-created-by>
     <bpr:contents count="2">
